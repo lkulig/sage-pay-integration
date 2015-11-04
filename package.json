@@ -1,0 +1,12 @@
+{
+  "name": "sage-pay-poc",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "Simple SagePay POC",
+  "author": "Lukasz Kulig",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "1.5.2"
+  },
+  "devDependencies": {
+  }
+}

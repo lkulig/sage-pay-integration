@@ -1,0 +1,137 @@
+<form class="ui large form" action="${sagePayProperties.url}" method="POST">
+    <div class="ui three column stackable grid container segment">
+        <div class="row">
+            <div class="ui column">
+                <h3 class="ui top attached header">
+                    Purchase Data
+                </h3>
+
+                <div class="ui attached segment">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="pound icon"></i>
+                            <input type="text" name="Amount" placeholder="Amount" data-ng-model="sagePayData.amount"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="comment icon"></i>
+                            <input type="text" name="Description" placeholder="Description"
+                                   data-ng-model="sagePayData.description" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui column">
+                <h3 class="ui top attached header">
+                    Billing Data
+                </h3>
+
+                <div class="ui attached segment">
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="Firstname" data-ng-model="sagePayData.billing.firstName"
+                                   maxlength="20" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="Surname" data-ng-model="sagePayData.billing.surname"
+                                   maxlength="20" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="Address" data-ng-model="sagePayData.billing.address"
+                                   maxlength="100" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="City" data-ng-model="sagePayData.billing.city"
+                                   maxlength="40"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="PostCode" data-ng-model="sagePayData.billing.postcode"
+                                   maxlength="10" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="Country" data-ng-model="sagePayData.billing.country"
+                                   maxlength="2" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui column">
+                <h3 class="ui top attached header">
+                    Delivery Data
+                </h3>
+
+                <div class="ui attached segment">
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="Firstname" data-ng-model="sagePayData.delivery.firstName"
+                                   maxlength="20" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="Surname" data-ng-model="sagePayData.delivery.surname"
+                                   maxlength="20" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="Address" data-ng-model="sagePayData.delivery.address"
+                                   maxlength="100" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="City" data-ng-model="sagePayData.delivery.city"
+                                   maxlength="40"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="PostCode" data-ng-model="sagePayData.delivery.postcode"
+                                   maxlength="10" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text" placeholder="Country" data-ng-model="sagePayData.delivery.country"
+                                   maxlength="2" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="field">
+                    <input type="text" name="VPSProtocol" data-ng-model="sagePayProperties.vpsProtocol" readonly>
+                </div>
+                <div class="field">
+                    <input type="text" name="TxType" data-ng-model="sagePayProperties.txType" readonly>
+                </div>
+                <div class="field">
+                    <input type="text" name="Vendor" data-ng-model="sagePayProperties.vendor" readonly>
+                </div>
+                <div class="field">
+                    <input type="text" name="Currency" data-ng-model="sagePayData.currency" readonly>
+                </div>
+                <div class="field">
+                    <input type="text" name="Crypt" data-ng-model="sagePayProperties.crypt" readonly>
+                </div>
+            <input type="submit" class="ui fluid large teal submit button right aligned" value="Submit">
+        </div>
+    </div>
+</form>

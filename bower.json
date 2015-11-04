@@ -1,0 +1,10 @@
+{
+  "name": "sage-pay-poc",
+  "version": "1.0.0-SNAPSHOT",
+  "dependencies": {
+    "angular": "1.4.5",
+    "angular-ui-router": "0.2.15",
+    "semantic-ui": "~2.1.5",
+    "cryptojslib": "~3.1.2"
+  }
+}
