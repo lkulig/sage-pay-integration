@@ -1,5 +1,5 @@
 angular.module('sagePayPoc')
-    .controller('FormController', function ($scope) {
+    .controller('FormController', function ($scope, $sce) {
         'use strict';
 
         $scope.sagePayData = {
@@ -31,7 +31,7 @@ angular.module('sagePayPoc')
             vendor: 'protx',
             crypt: '',
             key: '55a51621a6648525',
-            url: 'https://test.sagepay.com/gateway/service/vspform-register.vsp'
+            url: $sce.trustAsResourceUrl('https://test.sagepay.com/gateway/service/vspform-register.vsp')
         };
 
         $scope.urlData = {

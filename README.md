@@ -5,7 +5,7 @@ This sample application integrates with SagePay online payments service by using
 ### Configuration
 In the form.controller.js replace the following properties with your own data
 
-```JSON
+```
 $scope.sagePayProperties = {
             vpsProtocol: '3.00', // sage pay protocol version
             txType: 'PAYMENT', // payment type
